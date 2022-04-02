@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 Auth::routes();
 
-Route::get('/', function () {return view("database");})->middleware('auth');
+Route::get('/', 'Controller@showDatabase')->middleware('auth');
 
 // Endpointy místností
 Route::get('/rooms', 'RoomController@getRooms')->middleware('auth');
