@@ -55,7 +55,9 @@
         </tbody>
     </table>
     <a class="btn btn-secondary" href="{{ url("/") }}">Zpět</a>
+    @if(Auth::user()->admin)
     <a class="btn btn-primary" href="{{ url("/createRoom") }}">Nová místnost</a>
+    @endif
 </div>
 </body>
 </html>

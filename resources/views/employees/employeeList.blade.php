@@ -44,7 +44,9 @@
         </tbody>
     </table>
     <a class="btn btn-secondary" href="{{ url("/") }}">Zpět</a>
+    @if(Auth::user()->admin)
     <a class="btn btn-primary" href="{{ url("/createEmployee") }}">Nový zaměstnanec</a>
+    @endif
 </div>
 </body>
 </html>
