@@ -22,7 +22,7 @@
         </div>
         <div class="mb-3">
             <label for="wage" class="form-label">Mzda</label>
-            <input type="number" class="form-control" id="wage" name="wage" required>
+            <input type="number" class="form-control" id="wage" name="wage" required min="1">
         </div>
         <div class="mb-3">
             <label for="room" class="form-label">Místnost</label>
@@ -35,7 +35,7 @@
         </div>
         <div class="mb-3">
             <label for="keys[]" class="form-label">Klíče</label>
-            <select class="form-control" id="keys[]" name="keys[]" multiple="multiple" tabindex="1">
+            <select class="form-control" id="keys[]" name="keys[]" multiple="multiple">
                 @foreach($rooms as $room_id => $name)
                     <option value="{{ $room_id }}">{{ $name }}</option>
                 @endforeach

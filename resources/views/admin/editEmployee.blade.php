@@ -22,7 +22,7 @@
         </div>
         <div class="mb-3">
             <label for="wage" class="form-label">Mzda</label>
-            <input type="text" class="form-control" id="wage" name="wage" value="{{ $employee->wage }}">
+            <input type="number" class="form-control" id="wage" name="wage" value="{{ $employee->wage }}" required min="1">
         </div>
         <div class="mb-3">
             <label for="room" class="form-label">Místnost</label>
